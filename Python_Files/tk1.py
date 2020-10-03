@@ -1,0 +1,18 @@
+from tkinter import *
+root =Tk()
+root.title("Video Editor")
+one = Label(root, text="Video Editor", font=("arial",40,"bold"),bg="red",fg="white")
+one.pack(fill=X)
+two = Label(root, text="By Manideep",bg="green",fg="white")
+two.pack(fill=X)
+label= Label(root,text="File_Name",font=("ariel",20,"bold")).place(x=500,y=100)
+button1 = Button(root, text="Trim",font=("arial",15,"bold"),fg="red").place(x=500,y=150)
+button2 = Button(root, text="Brightness",font=("arial",15,"bold"),fg="red").place(x=560,y=150)
+button3 = Button(root, text="Resize",font=("arial",15,"bold"),fg="red").place(x=680,y=150)
+button4 = Button(root, text="Faster",font=("arial",15,"bold"),fg="red").place(x=760,y=150)
+button5 = Button(root, text="Slower",font=("arial",15,"bold"),fg="red").place(x=840,y=150)
+button6 = Button(root, text="MIXClip",font=("arial",15,"bold"),fg="red").place(x=920,y=150)
+
+name=StringVar()
+entry_box= Entry(root,textvariable=name,width=25,bg="lightgreen").place(x=650,y=110) 
+root.mainloop()
